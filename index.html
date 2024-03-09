@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Planner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Budget Planner</h1>
+        <div class="currency-section">
+            <label for="currency">Select Currency:</label>
+            <select id="currency">
+                <option value="USD">US Dollar (USD)</option>
+                <option value="EUR">Euro (EUR)</option>
+                <option value="GBP">British Pound (GBP)</option>
+                <!-- Include other currency options -->
+            </select>
+        </div>
+        <div class="categories">
+            <!-- Categories and expense subdivisions will be dynamically generated here -->
+        </div>
+        <div class="summary">
+            <h2>Summary</h2>
+            <div id="total_budget">Overall Budget: $0</div>
+        </div>
+        <button onclick="calculateBudget()">Calculate</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
